@@ -12,10 +12,10 @@ setuptools.setup(
     name='zaecee',
     version='1.0',
     packages=setuptools.find_packages(),
-    py_modules=['cli'],
+    #py_modules=['cli'],
     entry_points={
         'console_scripts': [
-            'zaecee=zaecee:main'
+            'zaecee=zaecee.cli:main'
         ]
     },
     zip_safe=False

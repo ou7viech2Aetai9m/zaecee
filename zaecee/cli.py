@@ -2,7 +2,7 @@
 import logging
 import argparse
 import sys
-import mogoasho
+import zaecee
 
 def main():
     logging.basicConfig(level=logging.INFO, datefmt='%Y-%m-%dT%H:%M:%S', stream=sys.stderr, format="%(asctime)s %(process)d %(thread)d %(levelno)03d:%(levelname)-8s %(name)-12s %(module)s:%(lineno)s:%(funcName)s %(message)s")
@@ -22,13 +22,10 @@ def main():
 
     logging.log(1, "hello %s", __name__)
     logging.debug("hello %s", __name__)
-    logging.info("hello %s", __name__)
+    logging.info("hello %s %s", __name__, __file__)
 
-    logging.info("mogoasho.mog_function(...) = %s", mogoasho.mog_function("this is my {}".format(__name__)))
+    logging.info("zaecee.zaecee_function(...) = %s", zaecee.zaecee_function("this is my {}".format(__name__)))
 
-    foo = mogoasho.MogType("this is my {}".format(__name__))
-    logging.info("foo.what() = %s", foo.what())
-    
     logging.info("this is now ... 01")
 
 if __name__ == "__main__":
