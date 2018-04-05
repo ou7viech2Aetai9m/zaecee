@@ -9,14 +9,13 @@ import setuptools
 # https://setuptools.readthedocs.io/en/latest/setuptools.html#metadata
 
 setuptools.setup(
-    name='mogoasho',
+    name='zaecee',
     version='1.0',
     packages=setuptools.find_packages(),
     py_modules=['cli'],
     entry_points={
         'console_scripts': [
-            'mog-cli=cli:main',
-            'mog-main=mogoasho.main:main'
+            'zaecee=zaecee:main'
         ]
     },
     zip_safe=False
